@@ -58,6 +58,7 @@ async def alive(client, message):
 ♬ **Pyrogram Version : `{pyrover}`** \n
 ♬ **PyTgCalls Version: `{pytover.__version__}`** \n
 ♬ **Using New Version** \n
+♬ **Owners This Bots : @JustRex **
 **Thanks For Using Me 🔥**""",
         reply_markup=InlineKeyboardMarkup(
             [
