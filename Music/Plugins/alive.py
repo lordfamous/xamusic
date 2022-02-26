@@ -42,7 +42,7 @@ async def _human_time_duration(seconds):
     return ', '.join(parts)
 
 
-KYY_IMG = "https://telegra.ph/file/ecb0d6835643cb4630151.jpg"
+KYY_IMG = "https://telegra.ph/file/bc81b8f61269523bd8d32.jpg"
 
 
 @app.on_message(filters.command(["alive", "alive@Tg_Vc_00_Bot"]))
@@ -52,13 +52,13 @@ async def alive(client, message):
     uptime = await _human_time_duration(int(uptime_sec))
     await client.send_photo(message.chat.id,
         photo=f"{KYY_IMG}",
-        caption=f"""**Holla {message.from_user.mention()}.** \n
-♬ **I'm Working Properly** \n
-♬ **Uptime : `{uptime}`** \n
-♬ **Pyrogram Version : `{pyrover}`** \n
-♬ **PyTgCalls Version: `{pytover.__version__}`** \n
+        caption=f"""**Halo {message.from_user.mention()}.** \n
+♬ **Saya Bekerja Dengan Benar** \n
+♬ **waktu aktif : `{uptime}`** \n
+♬ **Pyrogram Versi : `{pyrover}`** \n
+♬ **PyTgCalls Versi: `{pytover.__version__}`** \n
 ♬ **Using New Version** \n
-♬ **Owners This Bots : @JustRex **
+♬ **Owners This Bots : @famouspublic **
 **Thanks For Using Me 🔥**""",
         reply_markup=InlineKeyboardMarkup(
             [
